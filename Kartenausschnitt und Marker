@@ -1,0 +1,8 @@
+import folium
+text ='Bibliothek xy <br>Adresse, <br>sonstige Infos'
+
+map_osm = folium.Map(location=[Koordinate, Koordinate], zoom_start=18)
+folium.Marker([Koordinate, Koordinate], popup=text, icon=folium.Icon(color='green',icon='info-sign')).add_to(map_osm)
+
+# Karte speichern
+map_osm.save('map.html')
